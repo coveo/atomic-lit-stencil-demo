@@ -8,16 +8,14 @@
     />
     <title>Coveo Atomic</title>
 
-    <script
-      type="module"
-      src="https://staticdev.cloud.coveo.com/atomic/v3.31.2.5805/next/next.js"
-    ></script>
     <link
       rel="stylesheet"
       href="https://staticdev.cloud.coveo.com/atomic/v3.31.2.5805/themes/coveo.css"
     />
 
     <script type="module">
+      import {registerAutoloader} from 'https://staticdev.cloud.coveo.com/atomic/v3.31.2.5805/next/next.js'
+      registerAutoloader();
       await customElements.whenDefined('atomic-commerce-interface');
       const commerceInterface = document.querySelector(
         'atomic-commerce-interface'
