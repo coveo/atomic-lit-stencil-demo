@@ -75,7 +75,11 @@
     <h1>Search page</h1>
     <main>
       <section>
-        <atomic-commerce-interface type="search">
+        <atomic-commerce-interface
+          icon-assets-path="../assets"
+          language-assets-path="../lang"
+          type="search"
+        >
           <atomic-commerce-layout>
             <atomic-layout-section section="search">
               <atomic-commerce-search-box>
@@ -140,7 +144,6 @@
                 <atomic-commerce-query-summary></atomic-commerce-query-summary>
                 <atomic-commerce-sort-dropdown></atomic-commerce-sort-dropdown>
                 <atomic-commerce-did-you-mean></atomic-commerce-did-you-mean>
-                <atomic-commerce-refine-toggle></atomic-commerce-refine-toggle>
               </atomic-layout-section>
               <atomic-layout-section section="products">
                 <atomic-commerce-product-list
